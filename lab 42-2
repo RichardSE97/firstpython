@@ -1,0 +1,23 @@
+def main():
+
+    result = []
+    a1 = int(input('Enter your first number: '))
+    a2 = int(input('Enter your second number: '))
+    N = int(input('Enter the number of sequences: '))
+    result.append(a1)
+    result.append(a2)
+    
+    for i in range (N-2): #phai tru di 2 cai so dau a1 voi a2
+        result.append(a1 + a2)
+        X = a2
+        a2 = a1 + a2
+        a1 = X 
+    print (result)
+    ########################################
+    # Do not delete the return statement
+    ########################################
+    return result
+
+
+if _name_ == '_main_':
+    main()
